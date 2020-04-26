@@ -1,0 +1,373 @@
+Introducción al desarrollo web
+
+	El desarrollo web tiene que ver con todo lo que percibimos a través del navegador: páginas, aplicaciones y sitios web como Facebook, Instagram y Twitter.
+
+	Para comprender cómo funciona internet necesitamos conocer tres grandes conceptos:
+
+	Clients (clientes): son los dispositivos a través de los cuales accedemos a los sitios web: un computador desktop, un teléfono, una laptop, etc.
+	Internet: es toda la red formada por servidores y clientes que proveen y consumen contenidos web y se comunican entre sí a nivel global.
+	Server (servidor): es un computador, ubicado en alguna parte de la red, que está prendido todo el tiempo, en el que se alojan o almacenan sitios web y sus recursos y al cual se accede a través de nombres de dominio (.com, .net, .pe, etc.). También se les conoce como hosting.
+	Profesiones dentro del Desarrollo Web:
+
+	Frontend: son los encargados de cuidar toda la apariencia y experiencia de usuario. Su misión es pasar todo el diseño gráfico de un sitio o aplicación web, a código, y proveer toda la interactividad a los clientes. Esta rama se puede subdividir en algunas especializaciones como: Arquitecto Frontend, Desarrollador JavaScript (frontend), etc.
+	Backend: resguardan los datos y la seguridad de las aplicaciones y sitios web. Su misión es crear y mantener toda la parte del sitio web que sucede en los servidores. Pueden especializarse aún más en: SysAdmis, DevOps, Desarrollador JavaScript (backend), entre otros.
+	Las tres tecnologías básicas que debe conocer y manejar un Frontend son:
+
+	HTML: es el lenguaje de marcado para hacer websites.
+	CSS: hojas de estilos cascada, el diseño hecho código.
+	JavaScript: es el único lenguaje que funciona actualmente dentro de los navegadores de manera nativa."
+	
+Plan de estudios para ser un gran desarrollador web
+	En Platzi.com tienes todos los cursos necesarios para convertirte en un gran desarrollador web:
+
+	Desarrollo Web
+	Git y Github
+	Responsive Design
+	CSS Grid Layout
+	Animaciones
+	Post CSS
+	De jQuery a JavaScript
+	Fundamentos de JavaScript
+	Webpack
+	ReactJS
+	Redux
+	React Router
+	
+
+
+Post CSS es modularización y llevada a producción del tema de estilos.
+
+WebPack es el equivalente pero para JS.
+
+Redux: manejo homogeneo de datos en React.
+
+Desde git podes exponer pag web.
+
+Visual studio code es de microsoft.
+
+El mas rapido es sublime text. No es totalmente gratis. Creado en python. El mas tedioso de configurar.
+
+En head va title para tab y meta para tipo de caracteres.
+
+Etiquetas crean contenido.
+
+p de parrafo.
+
+Algunas etiquetas se cierran en si mismas. Ejemplo img.
+Las que se cierran solas no hace falta el "/"
+
+Atributos:
+
+	metadatos para las etiquetas.
+	
+En html5doctor podes ver todas las etiquetas existentes.
+
+doctype: tipo de documento que escribimos.
+
+html: todo el doc empieza.
+
+head y body hijos de html
+
+En Head:
+	
+	link: enlazar css
+	meta: metadatos
+	style: estilos dentro de alguna etiqueta html.
+	script: js dentro de etiqueta
+	noscript: cualquier mensaje por si no hay js disponible.
+	
+En Body:
+
+	article: diferencias alguna parte de nuestro contenido que pueda vivir por si misma.
+	nav: menues de navegacion.
+	aside: contenido no tan relevante. Publicidad
+	section: cada sección
+	header: primera parte
+	footer: abajo
+	
+	h1 tit principal
+	...
+	h6 menor relevancia.
+	
+	hr linea horizontal. Autocierre
+	
+	ol ordered list
+	ul unordered list
+	
+	li list item
+
+	figure. Contenedor de elementos img.
+	
+	div. Division. 
+	
+	div no tiene peso semantico.
+	
+	span es div a nivel de texto. No tiene peso semantico.
+	
+	table: tablas de contenidos, similar a la estructura de las hojas de calculo.
+	
+	Los atributos son valores agregados a las etiquetas (tags) html que extienden su habilidad o funcionalidad con información específica.
+	
+Atributos:
+
+	head: 
+		
+		link te permite enlazar favicon. Lo pide por default el browser.
+		
+			rel="icon" type="image/png" href= ruta
+
+	img:
+	
+		alt te pone mensaje alternativo por si no carga la img. Pone icono de imagen rota.
+		
+		src= ruta
+
+
+En los textos, inputs etc los placeholders son guias de fondo sobre qué significa el campo.
+
+Dentro de un form, los botones tienend efault submit.
+
+Los inputs type subtmit son como los botones que envian.
+
+label for="email" al hacer click te lleva al elemento de id email.
+
+El label es importante para checkbox porque no aplican los placeholders.
+
+Podes navegar a elementos dentro del mismo html con # para ir al quie tenga ese id. Esto con los href
+
+En los a href pones target="_blank" y te abre en pestaña nueva
+
+Hay 3 formas de agregar estilos al html en ordern de prioridad:
+
+	- En linea. Le metes style dentro del tag y "background: blue; etc"
+	- Como style en head o cualquiier lado
+	- <link rel="stylesheet" href="archivoexterno"> en head
+
+Dentro de style podes seleccionar tags, classes, ids
+
+Es en cascada css.
+
+El ultimo que lee el html es el que prevalece, sobreescribe a los anteriores que tengan mismo estilo.
+
+No recomendable: !important, pisa a todos.
+
+En CSS
+
+	- reglas 
+		compuestas de:
+		
+		- selectores (para los tags, ids, o class tales...)
+		- declaraciones (el bloque para ese selector)
+		- propiedades (background...)
+		- valores (red...)
+		
+	Selectores:
+		- Etiqueta
+		- Descendente: hijo de un tag. body header div nav ol li a{} aplica a todos los enlaces dentro de todos esos tags anidados.
+		- Id "#"
+		- Class "."
+		
+	
+Hay estilos default para los tags que vienen con el user agent, es decir el navegador:
+
+	user agent stylesheet
+	
+Las partes del head por los estilos del user agent aparcen por default con display: none
+
+Podes sobreescribir y hacer que el title te aparezca visible.
+
+Los tags son importantes para la indexacion de google tmb.
+
+Se le dice hero a la parte introductoria de data, siguiente al header.
+
+Los ids se recomiendan en español para que arriba en la url al hacer clicks a diferentes secciones aparezca #español
+
+Es mas recomendable usar clases asi reutilizas
+
+El hexadecimal en los colores es #FFFFFF (blanco) hasta #000000 (negro)
+
+Las primeras dos FF son de red, las otras de green y las otras de blue.
+
+Si los pares son iguales podes poner #FFF
+
+Cada rgb llega a 255 255 255
+
+#FF0000 rojo
+#00FF00 verde
+#0000FF azul
+
+Pixel, menor unidad homogenea de color en una imagen digital.
+
+En el inspector podes cambiarle valores a etiquetas, estilos etc.
+
+En fonts.google podes impoortar fuentes conocidas o custom
+
+Agregas el link a lo que te de google antes de tu link de estilos asi lo usas.
+
+En font-family va con comillas las importadas.
+
+font-family: 'fuente1', fuente2... fuente2 es por si no esta la 1
+
+Para ponerle fuentes a diferentes titulos por tag:
+
+h1
+h2
+h3{
+	font-family...
+}
+
+line-height te define el alto del br. Dberia ser minimo el alto de tu fuente. Ej: 1.5 es 150% del tamaño de fuente
+
+font-weight define el ancho de la fuente.
+
+normal es 400
+bold es 600 (negrita)
+
+font-style: italic. Cursiva
+
+letter-spacing espacio entre letras
+
+text-transform a mayus, minus, heredado, initial etc
+
+text-decoration: underline
+
+font-family: define el tipo de fuente aplicado al texto.
+color: define el colore del texto.
+line-height: define la altura desde la base del texto hasta la base de la siguiente línea de texto.
+font-size: define el tamaño del texto, admite cualquiera de las unidades de medida disponibles.
+letter-spacing: define el espaciado entre las letras del texto.
+font-weight: define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.
+text-decoration: define el decorado del texto como subrayado, tachado, con subrayado superior, etc.
+text-transform: permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.
+
+.project-details div{
+}
+aplica a los divs dentro de las clases project-details
+
+Si pones alto y ancho en pixels, si el elemento hijo sobrepasa al contenedor, todo lo de abajo de ese contenedor se va a solapar.
+
+Con color picker para chrome podes seleccionar un color que veas en cualquier pestaño y te da el hexadecimal
+
+urls
+	relativas: './'
+			   '../'
+			   
+	absolutas: '/'
+	
+background-repeat: no-repeat para que no te repita.
+
+Por ahora estamos moviendo elementos a los costados haciendo que su contenedor sea mas chico de alto que los elementos de adentro que queremos 
+mover a los costados.
+
+Comentarios:
+	HTML: <!-- mensaje -->
+	CSS: /* mensaje */
+
+border-top: 10px solid red;
+
+border-color: red;
+border-width: 15px;
+border-style: solid;
+border-radius: 10px;
+
+Los márgenes en CSS son el espacio que separa a los elementos html entre sí. Hay elementos de html que traen márgenes predefinidos (por defecto) en los estilos propios del navegador como el caso de: body, h1, h2, h3, h4, h5, h6, ol, ul, li, p, y muchos otros.
+
+Cuando hay dos márgenes de elementos diferentes que colindan entre sí, se presenta una situación llamada ““margin collapsing”” en la que el mayor margen de los dos se superpone al otro.
+
+Se puede asignar una medida de margin para los cuatro lados del elemento, o márgenes individuales para cada uno de los lados con: margin-top, margin-right, margin-bottom y margin-left.
+
+Se puede centrar un elemento html colocándole el valor de margin: 0 auto, cuando dicho elemento tiene display block.
+
+Padding es espacio dentro del container. Entre la esquina y los elementos internos.
+Margin es el espacio por fuera del contenedor.
+Padding afecta posicionamiento, alto ancho de elementos.
+
+Padding: relleno
+
+Si tenes un div que adentro tiene un h1, este h1 tiene margen por defecto pero no empuja al padre. Hace separación con el elemento anterior al padre
+y los de adentro del padre. Tenes que pisarle el margin.
+
+Modelo de caja (ves la cajita en el inspector):
+
+	Margin + Border + Padding + Size
+
+	El tamaño de caja por default es la suma del ancho/alto del elemento + padding + border.
+
+	Si pones box-sizing: border-box el tamaño maximo va a ser el del elemento, es decir, el borde y padding varian para adentro.
+
+Todos los elementos tienen la propiedad display
+
+El Head tiene display: none
+
+display: block ocupa todo su ancho disponible
+display: inline 
+
+bloque es toda la seccion horizontal.
+inline espera contenido a su costado.
+
+Los <a> tienen display:inline, se muestra al costado uno del otro salvo que tengan padre con block
+
+Para mostrar imagen al costado de otro elemento:
+
+	display inline se pasa por las bolas el ancho que le definas al elemento. Va a ocupar todo lo que le de su contenedor.
+
+	inline-block respeta el ancho que le digas.
+
+FlexBox
+
+	Si tenes un div con default block que adentro tiene otros div chicos, cada uno se va a poner uno abajo del otro por mas que tenga espacio a lo ancho.
+	
+	Si al padre le pones flex hace que se pongan cada caja hija una al lado de la otra.
+	
+	Afecta a hijos directos.
+	
+	Con flex acomodan su tamaño para que entren todos en ancho
+	
+	flex-direction: row es default. column los manda para abajo.
+	
+	flex-shrink: 0 para los hijos hace que no se encojan. 
+	
+	flex-wrap: rap para el padre hace que se acomoden abajo cuando no les da mas el ancho. El default en nowrap
+	
+	Con flex ya no tenes margin collapsing, se van a sumar los margenes de ambos elementos. Con margin collapsing solo se mostraba el mayor.
+	
+	Para el contenedor padre flex le podes poner:
+		
+		justify-content para espaciado de hijos, alinearlos.
+		
+		align-items alinea verticalmente.
+		
+	flex-direction: column hace que tambien los alineados se inviertan. O sea entre justify-content y align-items
+	
+	Para mover una sola caja hacia arriba: align-self: flex-start
+	
+Maquetación: usar CSS y HTML para dar diseño a la pagina
+
+padding: 0 10px; padding superior e inferior de 0 y izquierdo/derecho de 10px
+
+El padding a elementos internos dentro de un div hace que sean mas grandes.
+
+Para las imagenes el vertical-align: middle;
+
+Buena practica ponerle tamaño a imagenes.
+
+Para hacer que en el menu los links ocupen todo el alto para hacerle click fuimos heredando la altura desde el padre de cada uno.
+
+overflow-hidden hace que los pedazos que sobresalgan de un div por tener borde con radio por ejemplo, no se vean.
+
+A las imagenes de los eventos les ponemos object-fit cover.
+
+Para poner el div sobre la imagen usamos position relative y margen negativo.
+
+El borde toma el color del texto.
+
+.social-link.twitter{
+}
+es si tiene ambas clases
+
+las imagenes .svg nunca se pixelan. Escalan
+
+Para urls en imgs en estilos podes:
+
+	background-image: url('../../etc');
+	
